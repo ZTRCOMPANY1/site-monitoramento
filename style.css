@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+/* LOGIN */
+.login {
+    max-width: 320px;
+    margin: 120px auto;
+    background: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 15px;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+    border-radius: 5px;
+}
+
+/* HEADER */
+header {
+    background: #161b22;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #238636;
+    color: white;
+}
+
+button.blue { background: #1f6feb }
+button.red { background: #f85149 }
+
+/* SITE LIST */
+.site {
+    display: grid;
+    grid-template-columns: 1fr 120px 120px 120px;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #30363d;
+}
+
+.online { color: #2ea043 }
+.offline { color: #f85149 }

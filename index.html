@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Painel de Monitoramento | JulioNTB</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox" class="login">
+    <h2>🔐 Login</h2>
+    <input id="userInput" placeholder="Usuário">
+    <input id="passInput" type="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+</div>
+
+<!-- PAINEL -->
+<div id="panel" style="display:none">
+
+<header>
+    <h1>📡 Painel de Monitoramento</h1>
+    <button class="red" onclick="logout()">Sair</button>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>➕ Adicionar Site</h2>
+    <input id="siteName" placeholder="Nome do site">
+    <input id="siteUrl" placeholder="https://exemplo.com">
+    <button onclick="addSite()">Adicionar</button>
+</section>
+
+<section class="card">
+    <h2>🌐 Sites Monitorados</h2>
+    <div id="siteList"></div>
+</section>
+
+<section class="card">
+    <h2>📊 Uptime</h2>
+    <button class="red" onclick="resetChart()">Reiniciar gráfico</button>
+    <br><br>
+    <canvas id="chart"></canvas>
+</section>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
